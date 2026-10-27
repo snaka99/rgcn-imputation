@@ -1,4 +1,4 @@
-# rgcn-imputation
+# RGCN-imputation
 
 Fill missing values in production time series with a multi-relational graph network (R-GCN).
 
