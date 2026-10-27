@@ -63,28 +63,10 @@ backtest(df, settings, last_train_year=2021)        # train on <= 2021, predict 
 
 Both compare R-GCN with interpolation inside each series, kNN and Iterative Imputer and report MAE, RMSE, R² (original scale) and Wasserstein distance and Jensen-Shannon divergence (on log values).
 
-A full run on made-up data:
-
-```bash
-python examples/run_example.py
-```
-
-The example data are random numbers with the same shape as the data of the paper. The real data of the paper (MaaSiveTwin project) are not included in this repository.
-
 ## When it helps
 
 The graph helps when many records move together (same country, same product, same year) and a series has long gaps. For a few short series with small gaps, a straight line between the known years is hard to beat; always look at the "Interpolation" row of the evaluation before you use the R-GCN values.
 
-## Differences from the paper
-
-This is a simple version that is easy to read and change:
-
-- The model predicts a correction to the interpolation inside the series (see "How it works", point 5).
-- The input of a node also contains its own standardised value when it is known. During training a random part of the known values is hidden and the model has to rebuild them, so it never sees the value it is asked for.
-- Links of the column relations (country, product, ...) are only made between years at most `year_window` (default 1) apart, to keep the graph small. Set `year_window=None` to link all years.
-- The MAE term is divided by the mean of the true values, so it has the same size as the other loss terms.
-
-So the numbers you get will not be exactly the ones in the paper.
 
 ## Tests
 
@@ -106,8 +88,6 @@ If you use this code, please cite the paper:
   publisher = {IEEE}
 }
 ```
-
-GitHub also shows a "Cite this repository" button from `CITATION.cff`.
 
 ## Acknowledgment
 
