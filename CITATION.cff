@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "rgcn-imputation: multi-relational R-GCN imputation for production time series"
+type: software
+version: 0.1.0
+date-released: 2026-10-27
+license: MIT
+repository-code: "https://github.com/snaka99/rgcn-imputation"
+authors:
+  - family-names: Naka
+    given-names: Stelina
+    affiliation: Technical University of Crete
+keywords:
+  - missing data
+  - imputation
+  - graph neural networks
+  - R-GCN
+  - rare earth elements
+preferred-citation:
+  type: conference-paper
+  title: "Multi-Relational GCN Imputation for Missing Rare Earth Elements (REE) Production Time Series"
+  authors:
+    - family-names: Naka
+      given-names: Stelina
+      affiliation: Technical University of Crete
+    - family-names: Antonakakis
+      given-names: Marios
+      affiliation: Technical University of Crete; Hellenic Mediterranean University
+    - family-names: Livanos
+      given-names: Giorgos
+      affiliation: Technical University of Crete
+    - family-names: Darma
+      given-names: Susana
+      affiliation: Battronics GmbH
+    - family-names: Liao
+      given-names: Che-Hsien
+      affiliation: Battronics GmbH
+    - family-names: Zervakis
+      given-names: Michail
+      affiliation: Technical University of Crete
+  collection-title: "2026 IEEE International Conference on Evolving and Adaptive Intelligent Systems (EAIS)"
+  conference:
+    name: "IEEE EAIS 2026"
+    city: Pisa
+    country: IT
+    date-start: 2026-09-21
+    date-end: 2026-09-23
+  publisher:
+    name: IEEE
+  year: 2026
+  # add when known:
+  # doi: "10.1109/EAIS....."
+  # start: ...
+  # end: ...
